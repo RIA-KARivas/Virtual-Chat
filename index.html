@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help desk virtual chat</title>
+
+    <style>
+        df-messenger {
+         --df-messenger-bot-message: #FF6100;
+         --df-messenger-button-titlebar-color: #FF6100;
+         --df-messenger-chat-background-color: #fafafa;
+         --df-messenger-font-color: white;
+         --df-messenger-send-icon: #001133;
+         --df-messenger-user-message:  #AECECD;
+         --df-messenger-input-placeholder-font-color: black;        
+        }
+      </style>
+
+</head>
+<body>
+  <!---
+  <script>
+    //Name of the Customer Support Template:  Ria US Agents Chat
+    //Name of the Organization: Ria Money Transfer
+    (function(document, script) {
+        var bubbleScript = document.createElement(script);
+        e = document.getElementsByTagName(script)[0];
+        bubbleScript.async = true;
+        bubbleScript.CiscoAppId ='cisco-chat-bubble-app';
+        bubbleScript.appPrefix = '';
+        bubbleScript.DC = 'produs1.ciscoccservice.com';
+        bubbleScript.orgId = '4df9bd96-7288-44a1-9f1c-40e2038d35b0';
+        bubbleScript.templateId = '2926cc30-0151-11ec-8cef-a7eacbcfe1b9';
+        bubbleScript.src = 'https://bubble.produs1.ciscoccservice.com/bubble.js';
+        bubbleScript.type = 'text/javascript';
+        bubbleScript.setAttribute('charset', 'utf-8');
+        e.parentNode.insertBefore(bubbleScript, e);
+    })(document, 'script');
+  </script>
+  -->
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1">  </script>
+    <df-messenger
+      intent="test"
+      chat-title="Agent Livechat"
+      chat-icon="Maya.png"
+      agent-id="84051d83-70b6-49eb-a826-9126e1d4e6ca"
+      language-code="en"
+    ></df-messenger>    
+<script type="text/javascript" src="chatbot.js"></script>
+
+</body>
+</html>
